@@ -11,9 +11,12 @@ Secondaire
 Tertiaire
 #99E2D0
 */
-
-
-body
-{
-    color:red
-}
+@import "./Utils/variables";
+@import "./Utils/fonctions";
+@import "./Utils/mixins";
+@import "./components/buttons";
+@import "./components/cards";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./pages/index";
+@import "./pages/menu";
