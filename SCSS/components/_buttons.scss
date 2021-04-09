@@ -1,11 +1,4 @@
-$gen_btn_width:60%;
-$gen_btn_margin:((100%-$gen_btn_width)/2);
-
-@mixin btn--gradient ($color)
-{
-    background:(linear-gradient(to bottom right, lighten($color,15%),$color)) ;
-}
-
+// boutons générics avec couleur principale
 .generic__btn
 {
     width: $gen_btn_width;
@@ -13,7 +6,43 @@ $gen_btn_margin:((100%-$gen_btn_width)/2);
     color: white;
     @include btn--gradient ($prim-color);
     border: transparent;
-    border-radius: 50px;
+    border-radius: $btn-radius;
     height: 50px;
     box-shadow: $icon-color ;
+}
+
+//boutons de la section fonctionnement
+.fonctionnement__btn // /!\ ajouter l'effet :hover
+{
+    margin-bottom: 25px;
+    background-color: lighten($icon-color,79%);
+    border: transparent;
+    //box-shadow: lighten($icon-color, $amount: 50%) 0px 2px 10px;
+    @include shadow ($icon-color,50%);
+    border-radius: 20px;
+    display: flex;
+    height: 70px;
+    align-items: center;
+
+    div
+    {
+        position: relative;right: 20px;
+        color: white;
+        background-color: $prim-color;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        p
+        {
+            position: relative;bottom:10px;
+        }
+    }
+    i
+    {
+        color: $icon-color;
+    }
+    article
+    {
+        margin-left: 20px;
+    }
 }

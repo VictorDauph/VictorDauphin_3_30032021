@@ -1,50 +1,49 @@
 .accueil
 {
-    padding: 20px,0px;
+    @include sect-back-color($loc-back-color);
 }    
-
-.accueil--intro
+.accueil--intro //refactorer cette partie en nestant les selecteurs BEM
 {
     display: flex;
     flex-direction: column;
-    background-color: lighten($loc-back-color,3%) ;
     text-align: center;
     padding-bottom: 50px;
-    z-index: -1000;
-    
-
-
     .accueil__loc
     {
         background-color: $loc-back-color;
         font-weight: bold;
-        
-        
-        
+        box-shadow: inset 0px 1px 5px lighten($icon-color,50%) ;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color:$icon-color;
+        i
+        {  
+            position:relative;top:18px;
+        }    
     }
     h1,p
     {
         padding: 0 10% 0 10%;
     }    
-
     p
     {
         color: $icon-color;
     }
-    
-  
+}
+.accueil--fonctionnement
+{
+    padding: 10% 10% 15% 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.accueil--restaurants
+{
+    padding: 10% 5% 15%;
+    display: flex;
+    flex-direction: column;
 }
 
-.accueil__loc
-{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-    color:$icon-color;
-    i
-    {  
-        position:relative;top:18px;
-    }
-}
+
 

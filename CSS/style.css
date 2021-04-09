@@ -9,6 +9,71 @@
   box-shadow: #303030;
 }
 
+.fonctionnement__btn {
+  margin-bottom: 25px;
+  background-color: #f9f9f9;
+  border: transparent;
+  box-shadow: #b0b0b0 0px 2px 10px;
+  border-radius: 20px;
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+.fonctionnement__btn div {
+  position: relative;
+  right: 20px;
+  color: white;
+  background-color: #9356DC;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.fonctionnement__btn div p {
+  position: relative;
+  bottom: 10px;
+}
+.fonctionnement__btn i {
+  color: #303030;
+}
+.fonctionnement__btn article {
+  margin-left: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: #b0b0b0 0px 2px 10px;
+}
+.card img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.card article {
+  width: 70%;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.restaurants__card__new {
+  position: relative;
+  left: 85%;
+  top: -250px;
+  background-color: #99E2D0;
+  color: #217460;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  font-weight: bolder;
+}
+
 header {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -27,20 +92,27 @@ header > a > i {
 }
 
 .accueil {
-  padding: 20px, 0px;
+  background-color: #f2f2f2;
 }
 
 .accueil--intro {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
   text-align: center;
   padding-bottom: 50px;
-  z-index: -1000;
 }
 .accueil--intro .accueil__loc {
   background-color: #EAEAEA;
   font-weight: bold;
+  box-shadow: inset 0px 1px 5px #b0b0b0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #303030;
+}
+.accueil--intro .accueil__loc i {
+  position: relative;
+  top: 18px;
 }
 .accueil--intro h1, .accueil--intro p {
   padding: 0 10% 0 10%;
@@ -49,15 +121,17 @@ header > a > i {
   color: #303030;
 }
 
-.accueil__loc {
+.accueil--fonctionnement {
+  padding: 10% 10% 15% 10%;
   display: flex;
-  justify-content: center;
-  width: 100%;
-  color: #303030;
+  flex-direction: column;
+  background-color: white;
 }
-.accueil__loc i {
-  position: relative;
-  top: 18px;
+
+.accueil--restaurants {
+  padding: 10% 5% 15%;
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {
@@ -81,6 +155,11 @@ header > a > i {
 body, button {
   font: 1em Roboto;
   margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 i {
