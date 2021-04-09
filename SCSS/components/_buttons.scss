@@ -1,0 +1,19 @@
+$gen_btn_width:60%;
+$gen_btn_margin:((100%-$gen_btn_width)/2);
+
+@mixin btn--gradient ($color)
+{
+    background:(linear-gradient(to bottom right, lighten($color,15%),$color)) ;
+}
+
+.generic__btn
+{
+    width: $gen_btn_width;
+    margin: 0 $gen_btn_margin  0 $gen_btn_margin;
+    color: white;
+    @include btn--gradient ($prim-color);
+    border: transparent;
+    border-radius: 50px;
+    height: 50px;
+    box-shadow: $icon-color ;
+}

@@ -1,12 +1,50 @@
+.accueil
+{
+    padding: 20px,0px;
+}    
+
+.accueil--intro
+{
+    display: flex;
+    flex-direction: column;
+    background-color: lighten($loc-back-color,3%) ;
+    text-align: center;
+    padding-bottom: 50px;
+    z-index: -1000;
+    
+
+
+    .accueil__loc
+    {
+        background-color: $loc-back-color;
+        font-weight: bold;
+        
+        
+        
+    }
+    h1,p
+    {
+        padding: 0 10% 0 10%;
+    }    
+
+    p
+    {
+        color: $icon-color;
+    }
+    
+  
+}
+
 .accueil__loc
 {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: $loc-back-color;
+    
+    color:$icon-color;
     i
-    {
-        margin-right: 20px;
-        position:relative;top:20px;
+    {  
+        position:relative;top:18px;
     }
 }
+

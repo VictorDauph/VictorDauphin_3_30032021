@@ -1,7 +1,18 @@
+.generic__btn {
+  width: 60%;
+  margin: 0 20% 0 20%;
+  color: white;
+  background: linear-gradient(to bottom right, #bc95e9, #9356DC);
+  border: transparent;
+  border-radius: 50px;
+  height: 50px;
+  box-shadow: #303030;
+}
+
 header {
   padding-top: 20px;
   padding-bottom: 10px;
-  box-shadow: 0px 5px 5px #99E2D0;
+  margin-bottom: 0px;
   width: 100%;
 }
 header > img {
@@ -15,28 +26,60 @@ header > a > i {
   bottom: 7px;
 }
 
+.accueil {
+  padding: 20px, 0px;
+}
+
+.accueil--intro {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-bottom: 50px;
+  z-index: -1000;
+}
+.accueil--intro .accueil__loc {
+  background-color: #EAEAEA;
+  font-weight: bold;
+}
+.accueil--intro h1, .accueil--intro p {
+  padding: 0 10% 0 10%;
+}
+.accueil--intro p {
+  color: #303030;
+}
+
 .accueil__loc {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #EAEAEA;
+  color: #303030;
 }
 .accueil__loc i {
-  margin-right: 20px;
   position: relative;
-  top: 20px;
+  top: 18px;
 }
 
 @font-face {
   font-family: "Shrikhand";
-  src: url("./fonts/Shrikhand-Regular.woff");
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.eot ");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.woff2") format("woff2"), url("../fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.woff") format("woff"), url("../fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.ttf") format("truetype"), url("../fonts/shrikhand-v6-latin//shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
+  /* Legacy iOS */
 }
 @font-face {
   font-family: "Roboto";
-  src: url("./fonts/Roboto-Regular.woff");
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v27-latin/roboto-v27-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v27-latin/roboto-v27-latin-regular.eot ") format("embedded-opentype"), url("../fonts/roboto-v27-latin/roboto-v27-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v27-latin/roboto-v27-latin-regular.woff") format("woff"), url("../fonts/roboto-v27-latin/roboto-v27-latin-regular.ttf") format("truetype"), url("../fonts/roboto-v27-latin/roboto-v27-latin-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
 }
 body, button {
-  font: 1.2em Roboto;
+  font: 1em Roboto;
   margin: 0px;
 }
 
@@ -45,7 +88,8 @@ i {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.6em;
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=style.css.map */

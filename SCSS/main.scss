@@ -10,21 +10,38 @@
 @import "./pages/index";
 @import "./pages/menu";
 
-@font-face 
-{
-    font-family:"Shrikhand" ;
-    src: url("./fonts/Shrikhand-Regular.woff");
-}
 
-@font-face 
-{
-    font-family:"Roboto" ;
-    src: url("./fonts/Roboto-Regular.woff");
-}
+@font-face {
+    font-family: 'Shrikhand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.eot '); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/shrikhand-v6-latin//shrikhand-v6-latin-regular.svg#Shrikhand') format('svg'); /* Legacy iOS */
+  }
+  
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v27-latin/roboto-v27-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v27-latin/roboto-v27-latin-regular.eot ') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v27-latin/roboto-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v27-latin/roboto-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v27-latin/roboto-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v27-latin/roboto-v27-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  
 
 body,button
 {
-    font: 1.2em Roboto;
+    font: 1em Roboto;
     margin:0px;
 }
 
@@ -34,6 +51,7 @@ i
 }
 h1
 {
-    font-size:2em
+    font-size:1.6em;
+    font-weight: bolder;
 }
 
