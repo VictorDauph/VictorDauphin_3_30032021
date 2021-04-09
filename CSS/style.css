@@ -1,5 +1,30 @@
-body {
-  color: red;
+header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 0px 5px 5px #99E2D0;
+  width: 100%;
+}
+header > img {
+  width: 45%;
+  position: relative;
+  left: 25%;
+}
+header > a > i {
+  position: relative;
+  left: 40px;
+  bottom: 7px;
+}
+
+.accueil__loc {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #EAEAEA;
+}
+.accueil__loc i {
+  margin-right: 20px;
+  position: relative;
+  top: 20px;
 }
 
 @font-face {
@@ -12,6 +37,11 @@ body {
 }
 body, button {
   font: 1.2em Roboto;
+  margin: 0px;
+}
+
+i {
+  color: #303030;
 }
 
 h1 {

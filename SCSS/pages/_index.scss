@@ -1,4 +1,12 @@
-body
+.accueil__loc
 {
-    color:red
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $loc-back-color;
+    i
+    {
+        margin-right: 20px;
+        position:relative;top:20px;
+    }
 }

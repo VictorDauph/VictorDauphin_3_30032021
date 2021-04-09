@@ -25,8 +25,13 @@
 body,button
 {
     font: 1.2em Roboto;
+    margin:0px;
 }
 
+i
+{
+    color:$icon-color;
+}
 h1
 {
     font-size:2em
