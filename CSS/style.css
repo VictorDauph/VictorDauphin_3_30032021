@@ -44,9 +44,9 @@
   flex-wrap: wrap;
   justify-content: start;
   background-color: white;
-  margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: #b0b0b0 0px 2px 10px;
+  margin: 15px;
 }
 .card img {
   width: 100%;
@@ -129,7 +129,7 @@ header > a > i {
 }
 
 .accueil--restaurants {
-  padding: 10% 5% 15%;
+  padding: 10% 0% 15%;
   display: flex;
   flex-direction: column;
 }
