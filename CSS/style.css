@@ -2,4 +2,20 @@ body {
   color: red;
 }
 
+@font-face {
+  font-family: "Shrikhand";
+  src: url("./fonts/Shrikhand-Regular.woff");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.woff");
+}
+body, button {
+  font: 1.2em Roboto;
+}
+
+h1 {
+  font-size: 2em;
+}
+
 /*# sourceMappingURL=style.css.map */
