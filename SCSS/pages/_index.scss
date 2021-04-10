@@ -31,18 +31,23 @@
         color: $icon-color;
     }
 }
-.accueil--fonctionnement
+.accueil--fonctionnement //disposition sections fonctionnements
 {
     padding: 10% 10% 15% 10%;
     display: flex;
     flex-direction: column;
     background-color: white;
 }
-.accueil--restaurants
+.accueil--restaurants //disposition section restaurants
 {
-    padding: 10% 0% 15%;
+    padding: 10% 5% 10%;
     display: flex;
     flex-direction: column;
+    i // /!\ penser à appliquer un effet hover
+    {
+        position:relative;top: 30px; left: 10%;
+        font-size:25px;
+    }
 }
 
 

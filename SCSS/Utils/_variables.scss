@@ -4,6 +4,7 @@ $sec-color:#FF79DA;
 $ter-color:#99E2D0;
 $loc-back-color:#EAEAEA;
 $icon-color:#303030;
+$footer_BCG:#353535;
 
 //color mentions nouveau
 $bcg-new:#99E2D0;
@@ -14,3 +15,5 @@ $gen_btn_width:60%;
 $gen_btn_margin:((100%-$gen_btn_width)/2);
 $btn-radius:50px;
 
+//variables de contrôles d'integration des images: mixin int_pic
+$numbers: 01, 02, 03, 04;

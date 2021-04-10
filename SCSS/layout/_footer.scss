@@ -1,0 +1,33 @@
+footer
+{
+    background-color: $footer_BCG;
+    color: white;
+    padding: 25px;
+    strong
+    {
+        font-family:shrikhand;
+        font-weight: lighter;
+      
+    }
+    .footer_cont
+    {
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        width: 60%;
+        height: 2em;
+        
+    }
+
+    i
+    {
+        color: white;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+
+    a
+    {
+        color:white
+    }
+}
