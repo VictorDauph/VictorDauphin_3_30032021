@@ -30,9 +30,7 @@
 
     @each $nb in $numbers
     {
-        .img
-        {
-            &--#{$nb}
+        .img--#{$nb}
             {
                 background-image: url(/../../images/restaurants/img--0#{$nb}.jpg);
                 border-radius: $rad $rad 0 0;
@@ -42,6 +40,5 @@
                 background-position: center;
                 
             }
-        }
     }
 }
