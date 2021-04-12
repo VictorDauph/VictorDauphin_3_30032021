@@ -1,2 +1,45 @@
-@include int_pic (100%, 240px, 0px ) //(width, height, border-radius) charge automatiquement l'image correspondant à la page
+@include int_pic (100%, 240px, 0px ); //(width, height, border-radius) charge automatiquement l'image correspondant à la page
 
+.menu
+{
+    border-radius: 30px 30px 0 0;
+    position:relative;top:-40px;
+    @include sect-back-color ($loc-back-color);
+    &__titre
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1
+        {
+            font-family: shrikhand;
+            font-weight:lighter;
+            margin-left: 15px;
+            
+        }
+        .coeur //taille et effet dans buttons
+        {
+            margin-right: 50px;
+        }
+    }
+    &__part
+        {
+            h1
+            {
+                font-size: 0.9em;
+                font-weight: lighter;
+            }
+            padding: 20px;
+            &__cut
+            {
+                border-bottom: 5px solid $ter-color;
+                width: 40px;
+            }
+        }
+
+}
+
+.menu__container
+{
+    padding-bottom: 50px;
+}

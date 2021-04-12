@@ -1,38 +1,60 @@
-.accueil{
-    .card
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: start;
-        background-color: white;
-        border-radius: 20px;
-        @include shadow;
-        margin: 15px 0px;
-        article
-        {
-            width: 70%;
-            margin-left: 20px;
-            padding: 0;
-            
-        }
-    }
 
-    .restaurants__card
+.card //caractéristiques générales cartes
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    background-color: white;
+    border-radius: 20px;
+    @include shadow;
+    margin: 15px 0px;
+    article
     {
-        @include int_pic; //mixin d'intégration de automatique de l'image de la carte
-        &__new
-        {
-            position: relative; left:70%;top:30px;
-            background-color: $bcg-new;
-            @include darken($bcg-new);
-            height: 30px;
-            width: 80px;
-            text-align: center;
-            text-decoration: none;
-            padding-top: 10px;
-            font-weight: bolder;
-            
+        width: 70%;
+        margin-left: 20px;
+        padding: 0;
         
-        }
     }
 }
+    
+
+.restaurants__card //spécificités cartes page d'accueil
+{
+    @include int_pic; //mixin d'intégration de automatique de l'image de la carte
+    &__new //position des encarts "new"
+    {
+        position: relative; left:70%;top:30px;
+        background-color: $ter-color;
+        @include darken($ter-color);
+        height: 30px;
+        width: 80px;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 10px;
+        font-weight: bolder;
+        
+    
+    }
+}
+
+.menu__part__card //spécifités cartes menus
+{
+    h2
+    {
+        font-size: 1em;
+        font-weight:bold;
+    }
+    article
+    {
+        width: 100%;
+        margin-right: 30px;
+    }
+    .menu_card_cont
+    {
+      display: flex;
+      justify-content: space-between; 
+      width: 100%; 
+      margin-top: -15px;
+    }
+}
+
