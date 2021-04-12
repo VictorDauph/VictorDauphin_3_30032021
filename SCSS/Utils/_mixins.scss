@@ -32,7 +32,7 @@
     {
         .img--#{$nb}
             {
-                background-image: url(/../images/restaurants/img--0#{$nb}.jpg);
+                background-image: url(/./images/restaurants/img--0#{$nb}.jpg);
                 border-radius: $rad $rad 0 0;
                 width: $width;
                 height: $height;
