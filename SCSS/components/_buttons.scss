@@ -1,5 +1,5 @@
 // boutons générics avec couleur principale
-.generic__btn
+.generic__btn //voir mediaqueries pour la version responsive
 {
     width: $gen_btn_width;
     margin: 0 $gen_btn_margin  0 $gen_btn_margin;
@@ -9,6 +9,7 @@
     border-radius: $btn-radius;
     height: 50px;
     box-shadow: $icon-color ;
+    
 }
 
 //boutons de la section fonctionnement

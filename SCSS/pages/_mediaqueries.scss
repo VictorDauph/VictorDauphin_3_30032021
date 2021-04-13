@@ -5,11 +5,103 @@
 @media (min-width:768px) and (max-width:1023px)
 {   
     //design page d'accueil
+    .accueil__loc
+    {
+        i
+        {
+            position: relative; left: 60px;
+        }
+    }
+    .accueil--intro
+    {
+        align-items: center;
+    }
     .accueil--restaurants 
     {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 10% 0 10% 5%;
+        padding: 30px 5%;
+        justify-content: space-between;
+        h1
+        {   
+            width: 100%;
+        }
+        .card
+        {
+            width: 45%;
+        }
+    }
+
+    //design menus
+    .menu__titre
+    {
+        width: 75%;
+        margin:0 12%
+    }
+    .menu__part
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        &__cut
+        {
+            width: 75%;
+        }
+        &__card
+        {
+            width: 75%;
+        }
+
+    }
+    //design generic button
+    .menu__container
+    {
+        display:flex;
+        justify-content:center;
+    }
+    .generic__btn
+    {
+        width: 300px;
+        margin: 20px 0;
+        
+    }
+}
+
+
+
+
+//design desktop
+
+@media (min-width:1024px) //augmenter les marges sur les côtés et réduire les marges haut et bas
+{   
+    //design page d'accueil
+    .accueil__loc
+    {
+        i
+        {
+            position: relative; left: 100px;
+        }
+    }
+    .accueil--fonctionnement
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        h1
+        {
+            width: 100%;
+        }
+        .fonctionnement__btn
+        {
+            width: 30%;
+            margin-right: 3%;
+        }
+    }
+   
+    .accueil--restaurants 
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px 5%;
         h1
         {   
             width: 100%;
@@ -21,32 +113,42 @@
         }
     }
 
-
-}
-
-
-
-
-//design desktop
-
-@media (min-width:1024px) //augmenter les marges sur les côtés et réduire les marges haut et bas
-// réduire aussi la taille du logo
-{   
-    //design page d'accueil
-    .accueil--restaurants 
+    //design menus
+    .menu__titre
     {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 10% 0 10% 5%;
-        h1
-        {   
-            width: 100%;
-        }
-        .card
+        width: 50%;
+        margin:0 25%
+    }
+    .menu__part
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        &__cut
         {
-            width: 45%;
-            margin-right: 5%;
+            width: 50%;
         }
+        &__card
+        {
+            width: 50%;
+        }
+
+    }
+    //design generic button
+    .menu__container
+    {
+        display:flex;
+        justify-content:center;
+    }
+    .accueil--intro
+    {
+        align-items: center;
+    }
+    .generic__btn
+    {
+        width: 300px;
+        margin: 20px 0;
+        
     }
 
 

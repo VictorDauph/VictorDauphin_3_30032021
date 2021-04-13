@@ -33,6 +33,7 @@
         .img--#{$nb}
             {
                 background-image: url(./ressources/restaurants/img--0#{$nb}.jpg);
+                background-size:100%;
                 border-radius: $rad $rad 0 0;
                 width: $width;
                 height: $height;

@@ -2,22 +2,20 @@ header
 {    
     padding-top: 20px;
     padding-bottom: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     width: 100%;
-    
-    
+    display: flex;
+    justify-content: center;
    
     >img
     {
-        width: 45%;
-        position: relative;left:25%;
-        
+        width: 200px;
     }
 
     >a>i
     {
         font-size: 20px;
-        position: relative;left:20px;bottom:7px;
+        position:absolute;left:50px;
     }
     
 }
