@@ -1,0 +1,54 @@
+//breakpoints smartphones<768px<tablettes<1023px<destkop
+//code CSS mobile par défaut
+
+//design tablette
+@media (min-width:768px) and (max-width:1023px)
+{   
+    //design page d'accueil
+    .accueil--restaurants 
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10% 0 10% 5%;
+        h1
+        {   
+            width: 100%;
+        }
+        .card
+        {
+            width: 45%;
+            margin-right: 5%;
+        }
+    }
+
+
+}
+
+
+
+
+//design desktop
+
+@media (min-width:1024px) //augmenter les marges sur les côtés et réduire les marges haut et bas
+// réduire aussi la taille du logo
+{   
+    //design page d'accueil
+    .accueil--restaurants 
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10% 0 10% 5%;
+        h1
+        {   
+            width: 100%;
+        }
+        .card
+        {
+            width: 45%;
+            margin-right: 5%;
+        }
+    }
+
+
+}
+//menus faire 1/3 par section, augmenter les marges côté (peut être sur vody simplement)

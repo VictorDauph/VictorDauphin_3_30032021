@@ -281,6 +281,34 @@ header > a > i {
   padding-bottom: 50px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .accueil--restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10% 0 10% 5%;
+  }
+  .accueil--restaurants h1 {
+    width: 100%;
+  }
+  .accueil--restaurants .card {
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  .accueil--restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10% 0 10% 5%;
+  }
+  .accueil--restaurants h1 {
+    width: 100%;
+  }
+  .accueil--restaurants .card {
+    width: 45%;
+    margin-right: 5%;
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   font-style: normal;
