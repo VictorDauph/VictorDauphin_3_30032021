@@ -69,18 +69,17 @@
     }
     footer
     {
-        padding: 0;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
-        strong
-        {
-            width: 100%;
-            padding: 20px 20px
-        }
+        flex-wrap: wrap;
         p
+         {
+             width: 100%;
+         }
+        .footer_cont
         {
-            position: relative;top:-15px
+            width: 20%;
+            justify-content: center;
         }
     }
 }
@@ -180,14 +179,28 @@
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 50px 10%;
-        strong
+        p
         {
             width: 100%;
             margin-bottom: 20px;
-        }
-        p
-        {
             position: relative;top:-15px
+        }
+        .footer_cont
+        {
+            width: 25%;
+            flex-wrap: wrap;
+            justify-content: left;
+            
+            p
+            {
+                width: auto;
+                top:0;
+            }
+            a
+            {
+                position: relative; top:10px;
+            }
+            
         }
     }
 }

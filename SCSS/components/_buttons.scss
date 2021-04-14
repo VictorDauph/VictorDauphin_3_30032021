@@ -8,7 +8,7 @@
     border: transparent;
     border-radius: $btn-radius;
     height: 50px;
-    box-shadow: $icon-color ;
+    @include shadow ($icon-color) ;
     
 }
 

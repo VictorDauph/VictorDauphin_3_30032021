@@ -6,7 +6,7 @@
   border: transparent;
   border-radius: 50px;
   height: 50px;
-  box-shadow: #303030;
+  box-shadow: #b0b0b0 0px 2px 10px;
 }
 
 .fonctionnement__btn {
@@ -345,18 +345,16 @@ header > a > i {
   }
 
   footer {
-    padding: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-  }
-  footer strong {
-    width: 100%;
-    padding: 20px 20px;
+    flex-wrap: wrap;
   }
   footer p {
-    position: relative;
-    top: -15px;
+    width: 100%;
+  }
+  footer .footer_cont {
+    width: 20%;
+    justify-content: center;
   }
 }
 @media (min-width: 1024px) {
@@ -434,13 +432,24 @@ header > a > i {
     justify-content: space-around;
     padding: 50px 10%;
   }
-  footer strong {
+  footer p {
     width: 100%;
     margin-bottom: 20px;
-  }
-  footer p {
     position: relative;
     top: -15px;
+  }
+  footer .footer_cont {
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  footer .footer_cont p {
+    width: auto;
+    top: 0;
+  }
+  footer .footer_cont a {
+    position: relative;
+    top: 10px;
   }
 }
 @font-face {
