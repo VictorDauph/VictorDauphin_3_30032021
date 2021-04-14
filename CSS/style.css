@@ -11,6 +11,7 @@
 
 .fonctionnement__btn {
   margin-bottom: 25px;
+  width: 100%;
   background-color: #f9f9f9;
   border: transparent;
   box-shadow: #b0b0b0 0px 2px 10px;
@@ -19,23 +20,24 @@
   height: 70px;
   align-items: center;
 }
-.fonctionnement__btn div {
+.fonctionnement__btn__nbr {
   position: relative;
-  right: 20px;
+  right: 15px;
   color: white;
   background-color: #9356DC;
   width: 30px;
   height: 30px;
   border-radius: 30px;
 }
-.fonctionnement__btn div p {
+.fonctionnement__btn__nbr p {
   position: relative;
   bottom: 10px;
+  text-align: center;
 }
 .fonctionnement__btn i {
   color: #303030;
 }
-.fonctionnement__btn article {
+.fonctionnement__btn__content {
   margin-left: 20px;
 }
 

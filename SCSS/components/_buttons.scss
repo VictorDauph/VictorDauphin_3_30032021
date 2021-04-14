@@ -16,6 +16,7 @@
 .fonctionnement__btn // /!\ ajouter l'effet :hover
 {
     margin-bottom: 25px;
+    width: 100%;
     background-color: lighten($icon-color,79%);
     border: transparent;
     //box-shadow: lighten($icon-color, $amount: 50%) 0px 2px 10px;
@@ -25,9 +26,9 @@
     height: 70px;
     align-items: center;
 
-    div
+    &__nbr
     {
-        position: relative;right: 20px;
+        position: relative;right: 15px;
         color: white;
         background-color: $prim-color;
         width: 30px;
@@ -36,13 +37,14 @@
         p
         {
             position: relative;bottom:10px;
+            text-align: center;
         }
     }
     i
     {
         color: $icon-color;
     }
-    article
+    &__content
     {
         margin-left: 20px;
     }
