@@ -17,6 +17,10 @@
     {
         align-items: center;
     }
+    .accueil--fonctionnement
+    {
+        padding: 30px 5%;
+    }
     .accueil--restaurants 
     {
         flex-direction: row;
@@ -63,6 +67,22 @@
         width: 300px;
         margin: 20px 0;       
     }
+    footer
+    {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        strong
+        {
+            width: 100%;
+            padding: 20px 20px
+        }
+        p
+        {
+            position: relative;top:-15px
+        }
+    }
 }
 //design desktop
 @media (min-width:1024px) //augmenter les marges sur les côtés et réduire les marges haut et bas
@@ -79,6 +99,8 @@
     {
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 30px 10%;
+        justify-content: space-between;
         h1
         {
             width: 100%;
@@ -86,14 +108,14 @@
         .fonctionnement__btn
         {
             width: 30%;
-            margin-right: 3%;
         }
     }
     .accueil--restaurants 
     {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 30px 5%;
+        padding: 30px 10%;
+        justify-content: space-between;
         h1
         {   
             width: 100%;
@@ -101,27 +123,38 @@
         .card
         {
             width: 45%;
-            margin-right: 5%;
+            
         }
     }
     //design menus
-    .menu__titre
+    .menu
     {
-        width: 50%;
-        margin:0 25%
-    }
-    .menu__part
-    {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        &__cut
+        &__titre
         {
             width: 50%;
+            margin:0 25%
+
         }
-        &__card
+        &__part
         {
-            width: 50%;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            h1
+            {
+                width:100%;
+                text-align: center;
+            }
+            &__cut
+            {
+                width: 50%;
+                margin: 0 25%;
+            }
+            &__card
+            {
+                width: 30%;
+            }
         }
     }
     //design generic button
@@ -139,5 +172,22 @@
         width: 300px;
         margin: 20px 0;
         
+    }
+    footer
+    {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 50px 10%;
+        strong
+        {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        p
+        {
+            position: relative;top:-15px
+        }
     }
 }
