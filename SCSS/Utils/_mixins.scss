@@ -42,3 +42,24 @@
             }
     }
 }
+
+//effet gauche droite
+@mixin GD ($nb:3,$transX:10px,$color:$prim-color) //$nb=nombre de répétitions
+{
+    @for $i from 1 through $nb   
+    {   
+            $ecart:(74/$nb);
+            $percent:25+$i*$ecart;
+            $retour:(25+$i*$ecart)-0.5*$ecart;
+            
+            #{$retour}%
+            {
+                transform:translateX($transX);
+            }   
+
+            #{$percent}%
+            {
+                transform:translateX(-$transX);
+            }    
+        }   
+}

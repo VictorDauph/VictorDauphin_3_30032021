@@ -8,19 +8,24 @@
     border: transparent;
     border-radius: $btn-radius;
     height: 50px;
-    @include shadow ($icon-color) ;
-    
+    @include shadow ($icon-color) ;//(color,lighten amount)
+    opacity:1;
+    transition: opacity 150ms, box-shadow 250ms;
+    &:hover
+    {
+        opacity: 0.8;
+        @include shadow ($icon-color,0)
+    }
 }
 
-//boutons de la section fonctionnement
-.fonctionnement__btn // /!\ ajouter l'effet :hover
+//boutons de la section fonctionnement, ces boutons n'ont pas d'effets.
+.fonctionnement__btn 
 {
     margin-bottom: 25px;
     width: 100%;
     background-color: lighten($icon-color,79%);
     border: transparent;
-    //box-shadow: lighten($icon-color, $amount: 50%) 0px 2px 10px;
-    @include shadow ($icon-color,50%);
+    @include shadow ($icon-color,50%);//(color,lighten amount)
     border-radius: 20px;
     display: flex;
     height: 70px;
@@ -50,8 +55,22 @@
     }
 }
 
-// /!\effet active classe coeurs
+//
     .coeur //positions dans index et menu
     {
         font-size:25px;
+        &:hover //animation coeurs, keyframe shake et mixin GD et utiliser ::before
+        {
+            animation: shake 200ms;//faire 2 animations: une de remplissage et une de mouvement (peut être scale? qui itère)
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            
+        }
+        &:not(:hover) //nécessaire pour que les coeurs restent rose
+        {
+            animation: shake 200ms;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+            
+        }
     }
