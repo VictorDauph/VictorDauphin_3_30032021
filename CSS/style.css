@@ -49,16 +49,22 @@
 
 .coeur {
   font-size: 25px;
+  color: #303030;
+  opacity: 1;
+  font-size: 25px;
+  transform: scale(1);
+  font-weight: 500;
+  cursor: pointer;
 }
 .coeur:hover {
-  animation: shake 200ms;
-  animation-iteration-count: infinite;
+  animation: grow 300ms;
   animation-fill-mode: forwards;
+  animation-play-state: running;
 }
 .coeur:not(:hover) {
-  animation: shake 200ms;
-  animation-fill-mode: forwards;
+  animation: grow 1000ms;
   animation-play-state: paused;
+  animation-fill-mode: forwards;
 }
 
 .card {
@@ -468,32 +474,20 @@ header > a > i {
     top: 10px;
   }
 }
-@keyframes shake {
-  0% {
-    font-weight: 500;
-  }
+@keyframes grow {
   1% {
-    opacity: 0;
+    opacity: 0.2;
+    transform: scale(0.9);
+    font-weight: 600;
   }
-  24% {
-    transform: translateX(0);
-  }
-  43.5% {
-    transform: translateX(5px);
-  }
-  62% {
-    transform: translateX(-5px);
-  }
-  80.5% {
-    transform: translateX(5px);
-  }
-  99% {
-    transform: translateX(-5px);
+  80% {
+    transform: scale(1.5);
   }
   100% {
-    color: #9356DC;
     font-weight: 600;
-    transform: translateX(0px);
+    transform: scale(1);
+    opacity: 1;
+    color: #9356DC;
   }
 }
 @font-face {

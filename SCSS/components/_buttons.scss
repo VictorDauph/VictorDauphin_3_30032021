@@ -59,18 +59,25 @@
     .coeur //positions dans index et menu
     {
         font-size:25px;
-        &:hover //animation coeurs, keyframe shake et mixin GD et utiliser ::before
+        color: $icon-color;
+        opacity: 1;
+        font-size:25px;
+        transform: scale(1);
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover
         {
-            animation: shake 200ms;//faire 2 animations: une de remplissage et une de mouvement (peut être scale? qui itère)
-            animation-iteration-count: infinite;
+            animation: grow 300ms;
             animation-fill-mode: forwards;
-            
-        }
-        &:not(:hover) //nécessaire pour que les coeurs restent rose
+            animation-play-state: running;
+        }  
+        &:not(:hover)
         {
-            animation: shake 200ms;
-            animation-fill-mode: forwards;
+            animation: grow 1000ms;
             animation-play-state: paused;
-            
-        }
+            animation-fill-mode: forwards;
+        }   
+        
+        
     }
