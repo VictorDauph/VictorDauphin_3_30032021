@@ -12,9 +12,9 @@
 }
 
 //mixin darken
-@mixin darken ($color)
+@mixin darken ($color,$amount:45%)
 {
-    color:darken($color,45%);
+    color:darken($color,$amount);
 }
 
 //effet box-shadow

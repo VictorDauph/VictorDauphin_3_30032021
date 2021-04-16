@@ -23,9 +23,9 @@
 {
     margin-bottom: 25px;
     width: 100%;
-    background-color: lighten($icon-color,79%);
+    background-color: lighten($icon-color,50%);
     border: transparent;
-    @include shadow ($icon-color,50%);//(color,lighten amount)
+    @include shadow ($icon-color,20%);//(color,lighten amount)
     border-radius: 20px;
     display: flex;
     height: 70px;
@@ -54,30 +54,28 @@
         margin-left: 20px;
     }
 }
+.coeur //positions dans index et menu
+{
+    font-size:25px;
+    color: $icon-color;
+    opacity: 1;
+    font-size:25px;
+    transform: scale(1);
+    font-weight: 500;
+    cursor: pointer;
 
-//
-    .coeur //positions dans index et menu
+    &:hover
     {
-        font-size:25px;
-        color: $icon-color;
-        opacity: 1;
-        font-size:25px;
-        transform: scale(1);
-        font-weight: 500;
-        cursor: pointer;
-
-        &:hover
-        {
-            animation: grow 300ms;
-            animation-fill-mode: forwards;
-            animation-play-state: running;
-        }  
-        &:not(:hover)
-        {
-            animation: grow 1000ms;
-            animation-play-state: paused;
-            animation-fill-mode: forwards;
-        }   
-        
-        
-    }
+        animation: grow 300ms;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+    }  
+    &:not(:hover)
+    {
+        animation: grow 1000ms;
+        animation-play-state: paused;
+        animation-fill-mode: forwards;
+    }   
+    
+    
+}

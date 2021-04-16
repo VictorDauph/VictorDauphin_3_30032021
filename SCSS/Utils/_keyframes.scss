@@ -1,27 +1,4 @@
 //animation des coeurs
-//@keyframes shake 
-//{   
-//   0%
-//    {
-//        font-weight: 500;        
-//    }
-//    1%
-//    {
-//        opacity: 0;
-//    }
-//    24%
-//    {
-//        transform:translateX(0);
-//    }
-//     @include GD(2,5px); //GD(nombre d'allers retours:3, amplitude:10px, couleur de fin)   
-//    100%
-//    {      
-//        color:$prim-color;
-//        font-weight: 600;
-//        transform:translateX(0px);
-//    }
-//}
-
 @keyframes grow {
     0% 
     {
@@ -46,5 +23,64 @@
     }
   }
 
+//rotation du cercle du loading spinner
+@keyframes rotate-circle 
+{
+  0%
+    {
+      transform:rotate(0deg);
+    }
+  20%
+  {
+      transform:rotate(90deg);
+  }
+  50%
+  {
+      transform: rotate(180deg);
+  }
+  80%
+  {
+      transform: rotate(270deg);
+  }
+  100%
+  {
+      transform: rotate(360);
+  }
+}
+
+//apparition titre loading spinner
+@keyframes apparition
+{
+  0%
+  {
+    transform: translateY(200%);
+    opacity: 0;
+  } 
+  45%
+  {
+    transform: translateY(-5%);
+  }
+  100%
+  {
+    transform: translateY(0);
+  }
+}
+//disparition du loading spinner
+@keyframes disparition
+ {
+  0%
+  {
+    transform:scale(1);
+    opacity: 1;
+  }
+  80%
+  {
+    transform: scale(0.7);
+  }
+  100%
+  {
+    transform: scale(0);
+  }
+}
 
 

@@ -6,21 +6,21 @@
   border: transparent;
   border-radius: 50px;
   height: 50px;
-  box-shadow: #b0b0b0 0px 2px 10px;
+  box-shadow: #fafafa 0px 2px 10px;
   opacity: 1;
   transition: opacity 150ms, box-shadow 250ms;
 }
 .generic__btn:hover {
   opacity: 0.8;
-  box-shadow: #303030 0px 2px 10px;
+  box-shadow: #7a7a7a 0px 2px 10px;
 }
 
 .fonctionnement__btn {
   margin-bottom: 25px;
   width: 100%;
-  background-color: #f9f9f9;
+  background-color: #fafafa;
   border: transparent;
-  box-shadow: #b0b0b0 0px 2px 10px;
+  box-shadow: #adadad 0px 2px 10px;
   border-radius: 20px;
   display: flex;
   height: 70px;
@@ -41,7 +41,7 @@
   text-align: center;
 }
 .fonctionnement__btn i {
-  color: #303030;
+  color: #7a7a7a;
 }
 .fonctionnement__btn__content {
   margin-left: 20px;
@@ -49,7 +49,7 @@
 
 .coeur {
   font-size: 25px;
-  color: #303030;
+  color: #7a7a7a;
   opacity: 1;
   font-size: 25px;
   transform: scale(1);
@@ -73,7 +73,7 @@
   justify-content: start;
   background-color: white;
   border-radius: 20px;
-  box-shadow: #b0b0b0 0px 2px 10px;
+  box-shadow: #fafafa 0px 2px 10px;
   margin: 15px 0px;
 }
 .card article {
@@ -202,11 +202,11 @@ header > a > i {
 .accueil--intro .accueil__loc {
   background-color: #EAEAEA;
   font-weight: bold;
-  box-shadow: inset 0px 1px 5px #b0b0b0;
+  box-shadow: inset 0px 1px 5px #fafafa;
   display: flex;
   justify-content: center;
   width: 100%;
-  color: #303030;
+  color: #070707;
 }
 .accueil--intro .accueil__loc i {
   position: relative;
@@ -216,7 +216,7 @@ header > a > i {
   padding: 0 10% 0 10%;
 }
 .accueil--intro p {
-  color: #303030;
+  color: #7a7a7a;
 }
 
 .accueil--fonctionnement {
@@ -235,6 +235,42 @@ header > a > i {
   position: relative;
   top: 30px;
   left: 10%;
+}
+
+.spinner {
+  background-color: #9356DC;
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  height: 200%;
+  width: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 100%;
+  animation: disparition 2s 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ecubic-bezier(0, 1, 0, 1);
+}
+.spinner__circle {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-top: 5px solid #99E2D0;
+  border-bottom: 5px solid #99E2D0;
+  border-radius: 100%;
+  animation: rotate-circle 500ms;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+.spinner__circle__title {
+  width: 50%;
+  font-family: shrikhand;
+  font-size: 500%;
+  text-align: center;
+  color: #FF79DA;
+  animation: apparition 1000ms;
+  animation-timing-function: cubic-bezier(0, 1, 0, 1);
 }
 
 .img--1 {
@@ -310,6 +346,30 @@ header > a > i {
 
 .menu__container {
   padding-bottom: 50px;
+}
+
+.anim_1 {
+  transform: translateY(200%);
+  animation: apparition 1000ms 0s;
+  animation-fill-mode: forwards;
+}
+
+.anim_2 {
+  transform: translateY(200%);
+  animation: apparition 1000ms 200ms;
+  animation-fill-mode: forwards;
+}
+
+.anim_3 {
+  transform: translateY(200%);
+  animation: apparition 1000ms 400ms;
+  animation-fill-mode: forwards;
+}
+
+.anim_4 {
+  transform: translateY(200%);
+  animation: apparition 1000ms 600ms;
+  animation-fill-mode: forwards;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -490,6 +550,47 @@ header > a > i {
     color: #9356DC;
   }
 }
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  80% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360);
+  }
+}
+@keyframes apparition {
+  0% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  45% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes disparition {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   font-style: normal;
@@ -519,7 +620,7 @@ a {
 }
 
 i {
-  color: #303030;
+  color: #7a7a7a;
 }
 
 h1 {

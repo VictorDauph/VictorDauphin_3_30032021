@@ -16,7 +16,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        color:$icon-color;
+        @include darken($icon-color);
         i
         {  
             position:relative;top:18px;
@@ -50,5 +50,44 @@
     }
 }
 
+//loading spinner
 
+.spinner
+{
+    background-color: $prim-color;
+    position: fixed;top:-50%;left:-50%;
+    height: 200%;
+    width: 200%;
+    display: flex;
+    align-items: center; // les 2 éléments sont bien centrés quelque soit l'écran
+    justify-content: space-around;
+    border-radius:100% ;
+    animation: disparition 2s 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ecubic-bezier(0,1,0,1);
+
+    &__circle
+    {
+        position:absolute;
+        width: 20rem;
+        height: 20rem;
+        border-top:5px solid $ter-color;
+        border-bottom:5px solid $ter-color;
+        border-radius: 100%;
+        animation: rotate-circle 500ms; //voir keyframe: rotation du cercle
+        animation-iteration-count: infinite;
+        z-index: -1; //pour que le cercle soit derrière le titre
+
+        &__title
+        {
+            width: 50%;
+            font-family: shrikhand;
+            font-size: 500%;
+            text-align:center;
+            color:$sec-color ;
+            animation: apparition 1000ms;
+            animation-timing-function: cubic-bezier(0,1,0,1);
+        }
+    }
+}
 

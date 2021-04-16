@@ -3,7 +3,7 @@ $prim-color:#9356DC;
 $sec-color:#FF79DA;
 $ter-color:#99E2D0;
 $loc-back-color:#EAEAEA;
-$icon-color:#303030;
+$icon-color:#7a7a7a;
 $footer_BCG:#353535;
 $color-cut: #3c5952;
 
@@ -16,3 +16,9 @@ $btn-radius:50px;
 
 //variables de contrôles d'integration des images: mixin int_pic
 $numbers: 01, 02, 03, 04;
+
+//variables animations apparitions menus
+$duree: 1000ms;
+$decalage:200ms;
+$decalage2:2*$decalage;
+$decalage3:3*$decalage;

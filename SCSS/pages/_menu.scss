@@ -43,3 +43,32 @@
 {
     padding-bottom: 50px;
 }
+
+//animations d'apparition des menus
+.anim_1
+{
+    transform: translateY(200%);
+    animation: apparition $duree 0s;
+    animation-fill-mode: forwards;
+}
+
+.anim_2
+{   
+    transform: translateY(200%);
+    animation: apparition $duree $decalage;
+    animation-fill-mode: forwards;
+}
+
+.anim_3
+{   
+    transform: translateY(200%);
+    animation: apparition $duree $decalage2;
+    animation-fill-mode: forwards;
+}
+
+.anim_4
+{   
+    transform: translateY(200%);
+    animation: apparition $duree $decalage3;
+    animation-fill-mode: forwards;
+}
