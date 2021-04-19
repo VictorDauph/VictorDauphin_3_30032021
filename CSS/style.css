@@ -62,7 +62,7 @@
   animation-play-state: running;
 }
 .coeur:not(:hover) {
-  animation: grow 1000ms;
+  animation: grow 300ms;
   animation-play-state: paused;
   animation-fill-mode: forwards;
 }
@@ -187,21 +187,17 @@
 .menu__part__card:hover article {
   width: calc(100% - 100px);
   transition: all 500ms;
-  animation-fill-mode: forwards;
 }
 .menu__part__card:hover p + p {
   transition: all 500ms;
-  animation-fill-mode: forwards;
 }
 .menu__part__card:hover .check {
   transform: scaleX(1);
   transition: all 500ms;
-  animation-fill-mode: forwards;
 }
 .menu__part__card:hover i {
   transform: rotate(360deg);
   transition: all 500ms;
-  animation-fill-mode: forwards;
 }
 
 footer {

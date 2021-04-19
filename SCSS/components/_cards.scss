@@ -105,27 +105,24 @@
         article
         {
             width: calc(100% - 100px);
-            transition:all $dur_ch;
-            animation-fill-mode: forwards;
-            
+            transition:all $dur_ch;            
         }
         p+p
         {
             transition:all $dur_ch;
-            animation-fill-mode: forwards;
         }
         .check
         {
             transform:scaleX(1);
             transition:all $dur_ch;
-            animation-fill-mode: forwards;
+            
         }
         i
         {
             transform:rotate(360deg);
             transition:all $dur_ch;
-            animation-fill-mode: forwards;
         }
     }
+    
 }
 

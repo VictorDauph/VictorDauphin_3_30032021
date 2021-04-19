@@ -72,7 +72,7 @@
     }  
     &:not(:hover)
     {
-        animation: grow 1000ms;
+        animation: grow 300ms;
         animation-play-state: paused;
         animation-fill-mode: forwards;
     }   
