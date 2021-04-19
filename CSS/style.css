@@ -132,19 +132,76 @@
   font-weight: bolder;
 }
 
+.menu__part__card {
+  flex-wrap: nowrap;
+}
 .menu__part__card h2 {
   font-size: 1em;
   font-weight: bold;
-}
-.menu__part__card article {
   width: 100%;
-  margin-right: 30px;
 }
 .menu__part__card .menu_card_cont {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   margin-top: -15px;
+}
+.menu__part__card .menu_card_cont p, .menu__part__card .menu_card_cont h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.8em;
+}
+.menu__part__card .menu_card_cont p + p {
+  overflow: visible;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: block;
+  z-index: 3;
+  transform: translateX(0);
+}
+.menu__part__card article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu__part__card .check {
+  height: 100%;
+  width: 75px;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.menu__part__card .check i {
+  color: white;
+  font-size: 30px;
+}
+.menu__part__card:hover article {
+  width: calc(100% - 100px);
+  transition: all 500ms;
+  animation-fill-mode: forwards;
+}
+.menu__part__card:hover p + p {
+  transition: all 500ms;
+  animation-fill-mode: forwards;
+}
+.menu__part__card:hover .check {
+  transform: scaleX(1);
+  transition: all 500ms;
+  animation-fill-mode: forwards;
+}
+.menu__part__card:hover i {
+  transform: rotate(360deg);
+  transition: all 500ms;
+  animation-fill-mode: forwards;
 }
 
 footer {

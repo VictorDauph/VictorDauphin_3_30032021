@@ -39,22 +39,93 @@
 
 .menu__part__card //spécifités cartes menus
 {
+    flex-wrap: nowrap;
     h2
     {
         font-size: 1em;
         font-weight:bold;
-    }
-    article
-    {
         width: 100%;
-        margin-right: 30px;
     }
+
     .menu_card_cont
     {
       display: flex;
       justify-content: space-between; 
-      width: 100%; 
+      max-width: 100%; 
+      min-width: 100%;
       margin-top: -15px;
+      p, h2 
+      {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 0.8em;
+      }
+
+      p+p
+      {
+          overflow: visible;
+          margin-right: 10px;
+          margin-left: 10px;
+          display: block;
+          z-index: 3;
+          transform: translateX(0);
+      }
+    }
+    article
+    {
+        
+        width:100%;
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .check
+        { 
+            height: 100%;
+            width: 75px;
+            background-color: $ter-color;
+            border-radius: 0 20px 20px 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;right: 0px;
+            transform: scaleX(0);
+            transform-origin:right;
+            //transform:scaleX(1);
+            i
+            {
+                color: white;
+                font-size: 30px;
+
+            }
+        }
+    &:hover
+    {
+        article
+        {
+            width: calc(100% - 100px);
+            transition:all $dur_ch;
+            animation-fill-mode: forwards;
+            
+        }
+        p+p
+        {
+            transition:all $dur_ch;
+            animation-fill-mode: forwards;
+        }
+        .check
+        {
+            transform:scaleX(1);
+            transition:all $dur_ch;
+            animation-fill-mode: forwards;
+        }
+        i
+        {
+            transform:rotate(360deg);
+            transition:all $dur_ch;
+            animation-fill-mode: forwards;
+        }
     }
 }
 
