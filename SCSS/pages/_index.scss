@@ -64,7 +64,7 @@
     border-radius:100% ;
     animation: disparition 2s 500ms;
     animation-fill-mode: forwards;
-    animation-timing-function: ecubic-bezier(0,1,0,1);
+    animation-timing-function: cubic-bezier(0,1,0,1);
 
     &__circle
     {
