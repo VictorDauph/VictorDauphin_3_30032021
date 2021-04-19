@@ -54,7 +54,7 @@
 
 .spinner
 {
-    background-color: $prim-color;
+    @include btn--gradient ($prim-color,8%);
     position: fixed;top:-50%;left:-50%;
     height: 200%;
     width: 200%;
@@ -80,9 +80,9 @@
 
         &__title
         {
-            width: 50%;
+            width: 30%;
             font-family: shrikhand;
-            font-size: 500%;
+            font-size: 400%;
             text-align:center;
             color:$sec-color ;
             animation: apparition 1000ms;

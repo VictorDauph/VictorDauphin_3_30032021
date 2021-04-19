@@ -1,8 +1,8 @@
 //degradé couleur generic__btn
 
-@mixin btn--gradient ($color)
+@mixin btn--gradient ($color,$amount:15%)
 {
-    background:(linear-gradient(to bottom right, lighten($color,15%),$color)) ;
+    background:(linear-gradient(to bottom right, lighten($color,$amount),$color)) ;
 }
 
 //background-color "elaircissement pour color backgrounds"
