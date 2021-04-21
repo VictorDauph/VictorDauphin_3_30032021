@@ -8,7 +8,7 @@
 //background-color "elaircissement pour color backgrounds"
 @mixin sect-back-color ($color,$amount:3%)
 {
-    background-color:lighten($color,3%);
+    background-color:lighten($color,$amount);
 }
 
 //mixin darken

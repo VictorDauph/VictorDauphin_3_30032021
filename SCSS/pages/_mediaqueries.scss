@@ -5,6 +5,19 @@
 //design tablette
 @media (min-width:768px) and (max-width:1023px)
 {   
+    //design header
+    header
+    {
+        img
+        {
+            width: 30%;
+        }
+        >a>i
+        {
+            font-size: 35px;
+            position:absolute;left:15%;
+        }
+    }
     //design page d'accueil
     .accueil__loc
     {
@@ -25,7 +38,7 @@
     {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 30px 5%;
+        padding: 30px 13%;
         justify-content: space-between;
         h1
         {   
@@ -40,7 +53,11 @@
     .menu__titre
     {
         width: 75%;
-        margin:0 12%
+        padding-left:15%;
+        .coeur
+        {
+            margin-right: 6.5%;
+        }
     }
     .menu__part
     {
@@ -67,25 +84,38 @@
         width: 300px;
         margin: 20px 0;       
     }
+    //design footer
     footer
     {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        padding-left: 15%;
         p
          {
              width: 100%;
+             
          }
         .footer_cont
         {
-            width: 20%;
-            justify-content: center;
+            width: 45%;
+            
         }
     }
 }
 //design desktop
 @media (min-width:1024px) //augmenter les marges sur les côtés et réduire les marges haut et bas
 {   
+    //design header
+    header
+    {
+        img
+        {
+            width: 20%;
+        }
+        >a>i
+        {
+            font-size: 35px;
+            position:absolute;left:3%;
+        }
+    }
     //design page d'accueil
     .accueil__loc
     {
@@ -113,7 +143,7 @@
     {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 30px 10%;
+        padding: 30px 2%;
         justify-content: space-between;
         h1
         {   
@@ -121,7 +151,7 @@
         }
         .card
         {
-            width: 45%;
+            width: 48%;
             
         }
     }
@@ -130,8 +160,8 @@
     {
         &__titre
         {
-            width: 50%;
-            margin:0 25%
+            width: 97%;
+            margin:0 2.5%
 
         }
         &__part
@@ -177,8 +207,8 @@
         padding: 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 50px 10%;
+        justify-content: space-between;
+        padding: 50px;
         p
         {
             width: 100%;
@@ -187,18 +217,21 @@
         }
         .footer_cont
         {
-            width: 25%;
+            width:auto;
             flex-wrap: wrap;
             justify-content: left;
+            
             
             p
             {
                 width: auto;
                 top:0;
+                
             }
             a
             {
                 position: relative; top:10px;
+                
             }
             
         }
